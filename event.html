@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>EVENT 1</h1>
+        
+    </div>
+    <div class="seats">
+        <H3>NUMBER OF SEATS=23</H3>
+   
+    <div class="circle"></div>
+    </div>
+    <div class="details">
+       <center>
+        <table>
+            <tr>
+                <td>Name</td><td><input type="text" placeholder="enter your name"</td>
+            </tr>
+            <tr>
+                <td>gmail</td><td><input type="text" placeholder="enter your gmail"</td>
+            </tr>
+            <tr>
+                <td>mobile num</td><td><input type="number" placeholder="enter your NUMBER"</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender">male
+                        <input type="radio" name="Gender">male
+                    </td>
+
+                </tr>
+               
+            </tr>
+            <tr>
+                <td>number of seats</td>
+                <td>
+                    <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9 <option>10</option> <option>11</option> <option>12</option> <option>13</option> <option>14</option> <option>15</option> <option>16</option> <option>17</option> <option>18</option> <option>19</option>
+                    <option>20</option> <option>21</option> <option>22</option> <option>23</option>
+                </select>
+                
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="contsner">
+        <button type="submit" class="btn" onclick="openpopup()">submit</button>
+    </div>
+    <div class="popup" id="popup">
+        <img src="images.jpg">
+        <h2>Thank you!</h2>
+        <p>your seat in success Thank you!</p>
+        <button type="button" onclick="closepopup()">ok</button>
+    </div>
+</center>
+<script>
+    let popup= document.getElementById("popup")
+    function openpopup(){
+        popup.classList.add("openpopup")
+    }
+    function closepopup(){
+        popup.classList.remove("openpopup")
+    }
+</script>
+</body>
+</html>
